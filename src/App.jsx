@@ -3,13 +3,24 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 
 const App = () => {
+  let myNumber = 100;
+
+  const increment = () => {
+    myNumber += 1;
+    console.log(myNumber);
+  };
+
   return (
-    <div id="app">
+    <div className="flex flex-col justify-center items-center">
       <NavBar />
-      <div className="min-h-[75vh]">
-        <Home />
-      </div>
-      <Footer />
+
+      <button className="btn btn-success" onClick={increment}>
+        increment
+      </button>
+
+      <Home myNumber={myNumber} />
+      <hr />
+      <Footer myNumber={myNumber} />
     </div>
   );
 };
