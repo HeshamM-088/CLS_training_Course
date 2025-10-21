@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainFlex {
+  @apply flex flex-col md:flex-row justify-evenly items-center;
+}
