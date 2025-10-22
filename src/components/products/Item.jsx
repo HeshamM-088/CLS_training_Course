@@ -4,9 +4,9 @@ const Item = ({ product: { id, name, price, items } }) => {
       <h1>{name}</h1>
       <h1>${price}</h1>
       <h1>Items : {items}</h1>
-      <button className="btn btn-success">+</button>
-      <button className="btn btn-warning">-</button>
-      <button className="btn btn-error">del</button>
+      <button className="btn btn-sm btn-success">+</button>
+      <button className="btn btn-sm btn-warning">-</button>
+      <button className="btn btn-sm btn-error">del</button>
       <h1>Total Amount : ...</h1>
     </div>
   );
