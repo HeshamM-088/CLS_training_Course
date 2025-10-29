@@ -1,4 +1,4 @@
-import Loading from "../../components/loading/loading";
+import Loading from "../../components/loading/Loading";
 import useFetch from "../../hooks/useFetch";
 import StockProduct from "./components/StockProduct";
 
